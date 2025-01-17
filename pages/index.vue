@@ -25,9 +25,6 @@
       <div class="app__content">
         <LayoutIntensiveList />
 
-        <!-- <LayoutProgramm />
-        <LayoutWhatYouGet />
-        <LayoutFaq /> -->
         <LayoutFooter />
       </div>
     </div>

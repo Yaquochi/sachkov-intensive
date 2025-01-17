@@ -8,23 +8,17 @@
         <span class="text-white text-4xl">Sachkov Tech</span>
       </div>
 
-      <ul class="flex-col gap-3 hidden max-[540px]:flex">
-        <li>
+      <ul class="flex-col items-center gap-3 hidden max-[540px]:flex">
+        <li class="w-48">
           <a href="https://t.me/sachkov_blog" class="footer__btn">
             <span class="footer__btn-text">Telegram</span>
             <img src="~/assets/icon/tg.png" alt="телеграм." class="w-5" />
           </a>
         </li>
-        <li>
+        <li class="w-48">
           <a href="https://www.youtube.com/@KirillSachkov" class="footer__btn">
             <span class="footer__btn-text">YouTube</span>
             <img src="~/assets/icon/yt.png" alt="ютуб." class="w-5" />
-          </a>
-        </li>
-        <li>
-          <a href="https://t.me/sachkova_mng" class="footer__btn">
-            <span class="footer__btn-text">Написать менеджеру</span>
-            <img src="~/assets/icon/star.png" alt="записаться." class="w-6" />
           </a>
         </li>
       </ul>
@@ -48,22 +42,16 @@
     </div>
 
     <ul class="flex flex-col gap-6 max-[540px]:hidden">
-      <li>
+      <li class="w-48">
         <a href="https://t.me/sachkov_blog" class="footer__btn">
           <span class="footer__btn-text">Telegram</span>
           <img src="~/assets/icon/tg.png" alt="телеграм." />
         </a>
       </li>
-      <li>
+      <li class="w-48">
         <a href="https://www.youtube.com/@KirillSachkov" class="footer__btn">
           <span class="footer__btn-text">YouTube</span>
           <img src="~/assets/icon/yt.png" alt="ютуб." />
-        </a>
-      </li>
-      <li>
-        <a href="https://t.me/sachkova_mng" class="footer__btn">
-          <span class="footer__btn-text">Написать менеджеру</span>
-          <img src="~/assets/icon/star.png" alt="записаться." />
         </a>
       </li>
     </ul>

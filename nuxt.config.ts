@@ -12,6 +12,7 @@ export default defineNuxtConfig({
       },
     ],
     "nuxt-viewport",
+    "vue3-carousel-nuxt",
     "@nuxt/ui",
   ],
   css: ["~/assets/css/main.css"],
