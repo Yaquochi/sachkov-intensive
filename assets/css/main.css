@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel__next {
+  right: -70px !important;
+}
+
+.carousel__prev {
+  left: -70px !important;
+}
+
+.carousel__next,
+.carousel__prev {
+  color: #fff;
+  border: 1.5px solid #fff;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+
+.carousel__next:hover,
+.carousel__prev:hover {
+  color: #ba9cff;
+  border: 1.5px solid #ba9cff;
+  transition: all 0.2s ease-in-out;
+}
+
+.carousel__pagination-button::after {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.carousel__pagination-button--active::after {
+  background-color: #e59cff;
+}
+
+.carousel__pagination-button:hover::after {
+  background-color: rgba(229, 156, 255, 0.3);
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: -4px;
+  background-color: rgb(38 38 38) 0.3 !important;
+}
+
+body::-webkit-scrollbar {
+  background-color: rgb(38 38 38);
+  width: 7px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5a2bc7;
+  border-radius: 40px;
+}
+
+.programm-span {
+  background: linear-gradient(
+    90deg,
+    #e59cff 0.01%,
+    #ba9cff 50.01%,
+    #9cb2ff 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1300px) {
+  .carousel__next {
+    right: -35px !important;
+  }
+
+  .carousel__prev {
+    left: -35px !important;
+  }
+}
