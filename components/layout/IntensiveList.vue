@@ -11,7 +11,7 @@
     >
       <Slide v-for="(int, index) in intensivies" :key="index">
         <div
-          class="section__card section__card_main w-96 max-[540px]:w-full max-[1300px]:w-80"
+          class="section__card section__card_main w-96 max-[768px]:w-full max-[1300px]:w-80"
           @click="changeIntensive(int)"
         >
           <img :src="int.img" :alt="int.name" class="w-20 mx-auto" />
