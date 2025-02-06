@@ -9,7 +9,8 @@ export const intensivies = [
     programm: [
       {
         label: "Урок 1. Придумывание идеи и проектирование проекта",
-        content: `<ul>
+        defaultOpen: true,
+        content: `<ul class="int-list">
                         <li class="programm-span">План интенсива</li>
                         <li class="programm-span">Какие бывают проекты и как придумать идею для проекта?</li>
                         <li class="programm-span">Конкретные примеры идей</li>
@@ -25,7 +26,7 @@ export const intensivies = [
       },
       {
         label: "Урок 2. Проектирование REST API",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Проектирование REST API. Что такое REST API?</li>
                     <li class="programm-span">Проектирование конкретных REST методов</li>
                     <li class="programm-span">Создание ресурса, метод POST</li>
@@ -41,7 +42,7 @@ export const intensivies = [
       {
         label:
           "Урок 3. Выбор архитектуры для проекта: монолит, модульный монолит, микросервисы",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Какую архитектуру выбрать для проекта? Монолит, модульный монолит, микросервисы</li>
                     <li class="programm-span">Монолитная архитектура</li>
                     <li class="programm-span">Модульный монолит</li>
@@ -50,7 +51,7 @@ export const intensivies = [
       },
       {
         label: "Урок 4. Чистая архитектура",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Чистая архитектура, что это и зачем нужно?</li>
                     <li class="programm-span">Какие раньше были архитектуры?</li>
                     <li class="programm-span">Что такое бизнес логика?</li>
@@ -63,7 +64,7 @@ export const intensivies = [
       {
         label:
           "Урок 5. Создание репозитория и проекта, создание основных сущностей",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Создание репозитория</li>
                     <li class="programm-span">Создание проекта</li>
                     <li class="programm-span">Добавление .gitignore</li>
@@ -83,7 +84,7 @@ export const intensivies = [
       {
         label:
           "Урок 6. Настройка проекта: editorconfig, stylecop. Создание контроллера",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Коммит и пуш изменений, пуллреквест и мерж</li>
                     <li class="programm-span">Формирование задачи</li>
                     <li class="programm-span">Создание Asp Net Core проекта</li>
@@ -106,7 +107,7 @@ export const intensivies = [
       },
       {
         label: "Урок 7. Application слой",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Коммит и пуш изменений</li>
                     <li class="programm-span">Формируем задачу, работа с Application слоем</li>
                     <li class="programm-span">Документация enum'ов</li>
@@ -131,7 +132,7 @@ export const intensivies = [
       },
       {
         label: "Урок 8. Инфраструктурный слой",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Инфраструктурный слой, что это и для чего нужен</li>
                     <li class="programm-span">Создание инфраструктурного слоя для базы данных</li>
                     <li class="programm-span">Инверсия зависимостей, объясняю на примере</li>
@@ -144,7 +145,7 @@ export const intensivies = [
       },
       {
         label: "Урок 9. Работа с ошибками, как правильно работать с Exceptions",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Почему важно правильно работать с ошибками</li>
                     <li class="programm-span">Создание кастомных Exceptions</li>
                     <li class="programm-span">Класс Error и Shared проект. Правильно работаем с ошибками</li>
@@ -155,7 +156,7 @@ export const intensivies = [
       },
       {
         label: "Урок 10. Result паттерн",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Когда нужно использовать Exceptions</li>
                     <li class="programm-span">Когда нужно использовать Result паттерн</li>
                     <li class="programm-span">Зачем нужен Result паттерн, что это такое</li>
@@ -173,7 +174,7 @@ export const intensivies = [
       },
       {
         label: "Урок 11. Реализация других бизнес фич",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Метод AddAnswer</li>
                     <li class="programm-span">Что должен возвращать метод в сервисах</li>
                     <li class="programm-span">Документация методов, summary</li>
@@ -189,7 +190,7 @@ export const intensivies = [
       },
       {
         label: "Урок 12. Разделение сервиса на обработчики (Hanlders)",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Разделение сервиса на части</li>
                     <li class="programm-span">Как правильно назвать обработчик</li>
                     <li class="programm-span">Вынесение фичи в отдельный класс</li>
@@ -206,7 +207,7 @@ export const intensivies = [
       },
       {
         label: "Урок 13. Получение данных из бд и других источников",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Как получать данные?</li>
                     <li class="programm-span">Пишем фичу на получение данных с фильтрами</li>
                     <li class="programm-span">Какие модели возвращать из бэкенда? Создаём DTO</li>
@@ -225,7 +226,7 @@ export const intensivies = [
       },
       {
         label: "Урок 14. Модульный монолит",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Рассматриваем обычное монолитное решение</li>
                     <li class="programm-span">Как будет выглядеть модульный монолит</li>
                     <li class="programm-span">Меняем структуру проекта, создаём новые проекты</li>
@@ -243,7 +244,7 @@ export const intensivies = [
       },
       {
         label: "Урок 15. Github actions",
-        content: `<ul>
+        content: `<ul class="int-list">
                     <li class="programm-span">Пушим прошлую задачу в github</li>
                     <li class="programm-span">Настриваем Github actions</li>
                 </ul>`,

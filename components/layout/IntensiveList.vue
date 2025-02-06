@@ -2,7 +2,7 @@
   <section class="section">
     <h2 class="section__title">Доступные интенсивы</h2>
 
-    <Carousel
+    <!-- <Carousel
       :itemsToShow="
         $viewport.isLessThan('tablet') || intensivies.length < 2 ? 1 : 2
       "
@@ -40,7 +40,39 @@
         <Pagination />
         <Navigation v-if="!$viewport.isLessThan('tablet')" />
       </template>
-    </Carousel>
+    </Carousel> -->
+
+    <ul class="flex flex-row flex-wrap gap-6 justify-center w-full">
+      <li
+        class="section__card section__card_main gap-4 w-1/3 max-[1100px]:w-1/2 max-[768px]:w-full"
+        :class="int.id === currentIntensive.id && 'section__card_active'"
+        v-for="(int, index) in intensivies"
+        :key="index"
+        @click="changeIntensive(int)"
+      >
+        <h3
+          class="section__card-title text-center font-bold bg-gradient-to-r from-amber-400 to-yellow-300 inline-block text-transparent bg-clip-text"
+        >
+          {{ int.name }}
+        </h3>
+
+        <div class="divide-x-2 divide-neutral-300 text-center">
+          <span class="mr-2 font-extrabold">
+            {{ int.lessonsAmount }}
+            {{ getNoun(int.lessonsAmount, "урок", "урока", "уроков") }}
+          </span>
+          <span class="pl-2 font-extrabold">{{ int.duration }} ч.</span>
+        </div>
+
+        <p class="text-center font-thin text-base">
+          {{ int.descr }}
+        </p>
+
+        <a href="https://t.me/sachkova_mng" class="section__buy-btn">
+          Приобрести
+        </a>
+      </li>
+    </ul>
 
     <div class="flex flex-col">
       <h3 class="section__cur-title mb-5">{{ currentIntensive.name }}</h3>
@@ -133,9 +165,12 @@ const getNoun = (num, one, two, five) => {
   background: rgba(10, 1, 25, 0.6);
   color: rgba(255, 255, 255, 0.8);
   font-size: 18px;
-  font-weight: 400;
   padding: 24px;
   position: relative;
+}
+
+.section__card_active {
+  box-shadow: 0 0 15px #e59cff;
 }
 
 .section__card_main:hover {
@@ -179,6 +214,24 @@ const getNoun = (num, one, two, five) => {
   -webkit-text-fill-color: transparent;
 }
 
+.section__buy-btn {
+  width: 100%;
+  padding: 13px 18px;
+  text-align: center;
+  border-radius: 12px;
+  border: 1px solid #e59cff;
+  background: linear-gradient(90deg, #c2b8ff 0%, #5a2bc7 100%);
+  box-shadow: 0px 0px 15.1px 0px rgba(198, 135, 234, 0.5) inset;
+  color: #0a0119;
+  font-size: 16px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.section__buy-btn:hover {
+  box-shadow: 0px 0px 15.1px 0px #e59cff inset;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
 @media screen and (max-width: 1300px) {
   .section {
     gap: 32px;
@@ -217,12 +270,22 @@ const getNoun = (num, one, two, five) => {
     padding: 12px;
   }
 
+  .section__card_mini {
+    border-radius: 8px;
+    padding: 4px 10px;
+  }
+
   .section__card-title {
     font-size: 24px;
   }
 
   .carousel {
     padding: 0;
+  }
+
+  .section__buy-btn {
+    padding: 10px 15px;
+    border-radius: 8px;
   }
 }
 </style>

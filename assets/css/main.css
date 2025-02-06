@@ -41,6 +41,11 @@ html {
   background-color: rgba(229, 156, 255, 0.3);
 }
 
+.int-list {
+  list-style-type: "- ";
+  list-style-position: inside;
+}
+
 *::-webkit-scrollbar {
   width: 0.5rem;
   height: 0.5rem;
