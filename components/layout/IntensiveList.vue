@@ -14,13 +14,21 @@
           class="section__card section__card_main w-96 max-[768px]:w-full max-[1300px]:w-80"
           @click="changeIntensive(int)"
         >
-          <img :src="int.img" :alt="int.name" class="w-20 mx-auto" />
-
           <h3
             class="section__card-title mb-3 font-bold bg-gradient-to-r from-amber-400 to-yellow-300 inline-block text-transparent bg-clip-text"
           >
             {{ int.name }}
           </h3>
+
+          <div
+            class="divide-x divide-neutral-300 mb-3 section__card section__card_mini"
+          >
+            <span class="mr-2">
+              {{ int.lessonsAmount }}
+              {{ getNoun(int.lessonsAmount, "урок", "урока", "уроков") }}
+            </span>
+            <span class="pl-2">{{ int.duration }} ч.</span>
+          </div>
 
           <p class="line-clamp-2">
             {{ int.descr }}
@@ -72,57 +80,28 @@
 <script setup>
 const { $viewport } = useNuxtApp();
 
-import dotnet from "~/assets/img/int/dotnet.png";
-
-const intensivies = [
-  {
-    id: 0,
-    name: "Intensive 1",
-    descr:
-      "ksjdksjd sjdjsd dbs bd hhsdgdgds ddsdsd sdgsd sdsgdhs jx dhd ddd dd sd sd s ds dsdsds",
-    img: dotnet,
-    programm: [
-      {
-        label: "Реляционные и неряционные базы данных",
-        content: `<p>Практически ни одно бэкенд приложение не обходится без базы данных.
-						В этом курсе мы подробно изучим как работать с
-						<span class="programm-span">PostgreSQL</span>,
-						<span class="programm-span">MongoDb</span>
-						<span class="programm-span">Redis</span>.
-						На практике поработаем с <span class="programm-span">EF Core</span> и
-						<span class="programm-span">Dapper</span>. Научимся проектировать базу
-						данных, настривать сложные конфигурции для анемичных и богатых моделей,
-            писать сложные запросы, применять фильтрацию, пагинацию, сортировку, делать выборки и управлять транзакциями и блокировками.
-			Все эти знания вам обязательно понадобятся на реально работе и будут украшать ваше резюме.</p>`,
-      },
-      {
-        label: "ASP.NET Core",
-        content: `<p>На этом курсе мы очень подробно изучим, как разрабатывать
-						масштабируемые и производительные
-						<span class="programm-span">Web API</span> приложения с помощью
-						<span class="programm-span">ASP.NET Core</span>. Вы научитесь
-						работать с <span class="programm-span">конфигурациями</span>,
-						<span class="programm-span">логированием</span>,
-						<span class="programm-span">контроллерами</span>,
-						<span class="programm-span">Minimal Api</span>,
-						<span class="programm-span">Swagger</span>,
-						<span class="programm-span">роутингом</span>,
-						<span class="programm-span">Middleware</span>,
-						<span class="programm-span">аутентификацией</span> и
-						<span class="programm-span">авторизацией</span>,
-						<span class="programm-span">атрибутами</span> и
-						<span class="programm-span">фильтрами</span>.
-						Почти все наши сервисы будут иметь web api интерфейс для взаимодействия с внешним миром.
-						ASP.NET Core очень упрощает разработку веб приложений, сейчас данный фреймворк является стандартом индустрии.</p>`,
-      },
-    ],
-  },
-];
+import { intensivies } from "~/assets/intensivies/intensivies";
 
 const currentIntensive = ref(intensivies[0]);
 
 const changeIntensive = (int) => {
   currentIntensive.value = int;
+};
+
+const getNoun = (num, one, two, five) => {
+  let n = Math.abs(num);
+  n %= 100;
+  if (n >= 5 && n <= 20) {
+    return five;
+  }
+  n %= 10;
+  if (n === 1) {
+    return one;
+  }
+  if (n >= 2 && n <= 4) {
+    return two;
+  }
+  return five;
 };
 </script>
 
@@ -169,6 +148,11 @@ const changeIntensive = (int) => {
   display: flex;
   flex-direction: column;
   transition: all 0.2s ease-in-out;
+}
+
+.section__card_mini {
+  border-radius: 10px;
+  padding: 6px 12px;
 }
 
 .section__card-title {
