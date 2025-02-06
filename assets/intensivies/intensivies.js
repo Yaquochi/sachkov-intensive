@@ -35,7 +35,7 @@ export const intensivies = [
     duration: 13,
     programm: [
       {
-        label: "Урок 1. Придумывание идеи и проектирование проекта",
+        label: "Урок 1. Продумывание идеи и проектирование проекта",
         defaultOpen: true,
         content: `<ul class="int-list">
                         <li class="programm-span">Какие бывают проекты и как придумать идею для проекта?</li>
