@@ -33,7 +33,7 @@
 
       <div class="flex flex-row gap-x-3 gap-y-2 flex-wrap max-[540px]:flex-col">
         <a
-          href="https://disk.yandex.ru/i/1Y9RbK_8thY_og"
+          href="https://disk.yandex.ru/i/WUe0UUVdkY2tSQ"
           class="text-lg text-slate-400 underline max-[540px]:text-base max-[540px]:text-center !leading-tight"
         >
           Оферта
