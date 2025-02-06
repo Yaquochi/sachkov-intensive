@@ -3,33 +3,33 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, getQuery as getQuery$1, getRequestURL, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/h3/dist/index.mjs';
-import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import { stringify, uneval } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/devalue/index.js';
-import destr from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/destr/dist/index.mjs';
-import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/ufo/dist/index.mjs';
-import { renderToString } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/vue/server-renderer/index.mjs';
-import { propsToString, renderSSRHead } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/@unhead/ssr/dist/index.mjs';
-import { createFetch as createFetch$1, Headers as Headers$1 } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/hookable/dist/index.mjs';
-import { klona } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/klona/dist/index.mjs';
-import { snakeCase } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/scule/dist/index.mjs';
-import defu, { defuFn } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/defu/dist/defu.mjs';
-import { hash } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/unstorage/drivers/fs.mjs';
-import { toRouteMatcher, createRouter } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/radix3/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, splitCookiesString, isEvent, createEvent, fetchWithEvent, getRequestHeader, eventHandler, setHeaders, sendRedirect, proxyRequest, createError, setResponseHeader, send, getResponseStatus, setResponseStatus, setResponseHeaders, getRequestHeaders, getQuery as getQuery$1, getRequestURL, createApp, createRouter as createRouter$1, toNodeListener, lazyEventHandler, getRouterParam, readBody, getResponseStatusText } from 'file://D:/Projects/sachkov-intensive/node_modules/h3/dist/index.mjs';
+import { getRequestDependencies, getPreloadLinks, getPrefetchLinks, createRenderer } from 'file://D:/Projects/sachkov-intensive/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import { stringify, uneval } from 'file://D:/Projects/sachkov-intensive/node_modules/devalue/index.js';
+import destr from 'file://D:/Projects/sachkov-intensive/node_modules/destr/dist/index.mjs';
+import { parseURL, withoutBase, joinURL, getQuery, withQuery, withTrailingSlash, joinRelativeURL } from 'file://D:/Projects/sachkov-intensive/node_modules/ufo/dist/index.mjs';
+import { renderToString } from 'file://D:/Projects/sachkov-intensive/node_modules/vue/server-renderer/index.mjs';
+import { propsToString, renderSSRHead } from 'file://D:/Projects/sachkov-intensive/node_modules/@unhead/ssr/dist/index.mjs';
+import { createFetch as createFetch$1, Headers as Headers$1 } from 'file://D:/Projects/sachkov-intensive/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://D:/Projects/sachkov-intensive/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://D:/Projects/sachkov-intensive/node_modules/hookable/dist/index.mjs';
+import { klona } from 'file://D:/Projects/sachkov-intensive/node_modules/klona/dist/index.mjs';
+import { snakeCase } from 'file://D:/Projects/sachkov-intensive/node_modules/scule/dist/index.mjs';
+import defu, { defuFn } from 'file://D:/Projects/sachkov-intensive/node_modules/defu/dist/defu.mjs';
+import { hash } from 'file://D:/Projects/sachkov-intensive/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://D:/Projects/sachkov-intensive/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://D:/Projects/sachkov-intensive/node_modules/unstorage/drivers/fs.mjs';
+import { toRouteMatcher, createRouter } from 'file://D:/Projects/sachkov-intensive/node_modules/radix3/dist/index.mjs';
 import { AsyncLocalStorage } from 'node:async_hooks';
-import { consola } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/consola/dist/index.mjs';
-import { getContext } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/unctx/dist/index.mjs';
-import { captureRawStackTrace, parseRawStackTrace } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/errx/dist/index.js';
-import { isVNode, version, unref } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/vue/index.mjs';
-import { basename } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/pathe/dist/index.mjs';
-import { getIcons } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/@iconify/utils/lib/index.mjs';
-import { collections } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/.nuxt/nuxt-icon-server-bundle.mjs';
-import { createServerHead as createServerHead$1, CapoPlugin } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/unhead/dist/index.mjs';
-import { defineHeadPlugin } from 'file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/@unhead/shared/dist/index.mjs';
+import { consola } from 'file://D:/Projects/sachkov-intensive/node_modules/consola/dist/index.mjs';
+import { getContext } from 'file://D:/Projects/sachkov-intensive/node_modules/unctx/dist/index.mjs';
+import { captureRawStackTrace, parseRawStackTrace } from 'file://D:/Projects/sachkov-intensive/node_modules/errx/dist/index.js';
+import { isVNode, version, unref } from 'file://D:/Projects/sachkov-intensive/node_modules/vue/index.mjs';
+import { basename } from 'file://D:/Projects/sachkov-intensive/node_modules/pathe/dist/index.mjs';
+import { getIcons } from 'file://D:/Projects/sachkov-intensive/node_modules/@iconify/utils/lib/index.mjs';
+import { collections } from 'file://D:/Projects/sachkov-intensive/.nuxt/nuxt-icon-server-bundle.mjs';
+import { createServerHead as createServerHead$1, CapoPlugin } from 'file://D:/Projects/sachkov-intensive/node_modules/unhead/dist/index.mjs';
+import { defineHeadPlugin } from 'file://D:/Projects/sachkov-intensive/node_modules/@unhead/shared/dist/index.mjs';
 
 const r=Object.create(null),i=e=>globalThis.process?.env||globalThis._importMeta_.env||globalThis.Deno?.env.toObject()||globalThis.__env__||(e?r:globalThis),s=new Proxy(r,{get(e,o){return i()[o]??r[o]},has(e,o){const E=i();return o in E||o in r},set(e,o,E){const b=i(!0);return b[o]=E,!0},deleteProperty(e,o){if(!o)return !1;const E=i(!0);return delete E[o],!0},ownKeys(){const e=i(!0);return Object.keys(e)}}),t=typeof process<"u"&&process.env&&"development"||"",B=[["APPVEYOR"],["AWS_AMPLIFY","AWS_APP_ID",{ci:!0}],["AZURE_PIPELINES","SYSTEM_TEAMFOUNDATIONCOLLECTIONURI"],["AZURE_STATIC","INPUT_AZURE_STATIC_WEB_APPS_API_TOKEN"],["APPCIRCLE","AC_APPCIRCLE"],["BAMBOO","bamboo_planKey"],["BITBUCKET","BITBUCKET_COMMIT"],["BITRISE","BITRISE_IO"],["BUDDY","BUDDY_WORKSPACE_ID"],["BUILDKITE"],["CIRCLE","CIRCLECI"],["CIRRUS","CIRRUS_CI"],["CLOUDFLARE_PAGES","CF_PAGES",{ci:!0}],["CODEBUILD","CODEBUILD_BUILD_ARN"],["CODEFRESH","CF_BUILD_ID"],["DRONE"],["DRONE","DRONE_BUILD_EVENT"],["DSARI"],["GITHUB_ACTIONS"],["GITLAB","GITLAB_CI"],["GITLAB","CI_MERGE_REQUEST_ID"],["GOCD","GO_PIPELINE_LABEL"],["LAYERCI"],["HUDSON","HUDSON_URL"],["JENKINS","JENKINS_URL"],["MAGNUM"],["NETLIFY"],["NETLIFY","NETLIFY_LOCAL",{ci:!1}],["NEVERCODE"],["RENDER"],["SAIL","SAILCI"],["SEMAPHORE"],["SCREWDRIVER"],["SHIPPABLE"],["SOLANO","TDDIUM"],["STRIDER"],["TEAMCITY","TEAMCITY_VERSION"],["TRAVIS"],["VERCEL","NOW_BUILDER"],["VERCEL","VERCEL",{ci:!1}],["VERCEL","VERCEL_ENV",{ci:!1}],["APPCENTER","APPCENTER_BUILD_ID"],["CODESANDBOX","CODESANDBOX_SSE",{ci:!1}],["STACKBLITZ"],["STORMKIT"],["CLEAVR"],["ZEABUR"],["CODESPHERE","CODESPHERE_APP_ID",{ci:!0}],["RAILWAY","RAILWAY_PROJECT_ID"],["RAILWAY","RAILWAY_SERVICE_ID"],["DENO-DEPLOY","DENO_DEPLOYMENT_ID"],["FIREBASE_APP_HOSTING","FIREBASE_APP_HOSTING",{ci:!0}]];function p(){if(globalThis.process?.env)for(const e of B){const o=e[1]||e[0];if(globalThis.process?.env[o])return {name:e[0].toLowerCase(),...e[2]}}return globalThis.process?.env?.SHELL==="/bin/jsh"&&globalThis.process?.versions?.webcontainer?{name:"stackblitz",ci:!1}:{name:"",ci:!1}}const l=p(),d=l.name;function n(e){return e?e!=="false":!1}const I=globalThis.process?.platform||"",T=n(s.CI)||l.ci!==!1,R=n(globalThis.process?.stdout&&globalThis.process?.stdout.isTTY);n(s.DEBUG);const A=t==="test"||n(s.TEST);n(s.MINIMAL)||T||A||!R;const _=/^win/i.test(I);!n(s.NO_COLOR)&&(n(s.FORCE_COLOR)||(R||_)&&s.TERM!=="dumb"||T);const C=(globalThis.process?.versions?.node||"").replace(/^v/,"")||null;Number(C?.split(".")[0])||null;const y=globalThis.process||Object.create(null),c={versions:{}};new Proxy(y,{get(e,o){if(o==="env")return s;if(o in e)return e[o];if(o in c)return c[o]}});const L=globalThis.process?.release?.name==="node",a=!!globalThis.Bun||!!globalThis.process?.versions?.bun,D=!!globalThis.Deno,O=!!globalThis.fastly,S=!!globalThis.Netlify,N=!!globalThis.EdgeRuntime,P=globalThis.navigator?.userAgent==="Cloudflare-Workers",F=[[S,"netlify"],[N,"edge-light"],[P,"workerd"],[O,"fastly"],[D,"deno"],[a,"bun"],[L,"node"]];function G(){const e=F.find(o=>o[0]);if(e)return {name:e[1]}}const u=G();u?.name||"";
 
@@ -377,7 +377,7 @@ new Proxy(/* @__PURE__ */ Object.create(null), {
   }
 });
 
-const serverAssets = [{"baseName":"server","dir":"/Users/julia.sachkova/Desktop/курс/sachkov-intensive/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"D:/Projects/sachkov-intensive/server/assets"}];
 
 const assets = createStorage();
 
@@ -389,11 +389,11 @@ const storage = createStorage({});
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/julia.sachkova/Desktop/курс/sachkov-intensive","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/Users/julia.sachkova/Desktop/курс/sachkov-intensive/server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/julia.sachkova/Desktop/курс/sachkov-intensive/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/Users/julia.sachkova/Desktop/курс/sachkov-intensive/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"/Users/julia.sachkova/Desktop/курс/sachkov-intensive/.data/kv","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Projects\\sachkov-intensive","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"D:\\Projects\\sachkov-intensive\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Projects\\sachkov-intensive\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"D:\\Projects\\sachkov-intensive\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('data', unstorage_47drivers_47fs({"driver":"fs","base":"D:\\Projects\\sachkov-intensive\\.data\\kv","ignore":["**/node_modules/**","**/.git/**"]}));
 
 function useStorage(base = "") {
   return base ? prefixStorage(storage, base) : storage;
@@ -843,13 +843,13 @@ if (!window.__NUXT_DEVTOOLS_TIME_METRIC__) {
 window.__NUXT_DEVTOOLS_TIME_METRIC__.appInit = Date.now()
 `;
 
-const _IO7N2WDZyn = (function(nitro) {
+const _1iTvOZYZt7 = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script$1}<\/script>`);
   });
 });
 
-const rootDir = "/Users/julia.sachkova/Desktop/курс/sachkov-intensive";
+const rootDir = "D:/Projects/sachkov-intensive";
 
 const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[],"style":[],"script":[],"noscript":[]};
 
@@ -868,7 +868,7 @@ const devReducers = {
   URL: (data) => data instanceof URL ? data.toString() : void 0
 };
 const asyncContext = getContext("nuxt-dev", { asyncContext: true, AsyncLocalStorage });
-const _Fa4TWwbx7S = (nitroApp) => {
+const _0kNYcw0N6O = (nitroApp) => {
   const handler = nitroApp.h3App.handler;
   nitroApp.h3App.handler = (event) => {
     return asyncContext.callAsync({ logs: [], event }, () => handler(event));
@@ -939,16 +939,16 @@ function onConsoleLog(callback) {
 
 const script = "\"use strict\";(()=>{const t=window,e=document.documentElement,c=[\"dark\",\"light\"],n=getStorageValue(\"localStorage\",\"nuxt-color-mode\")||\"dark\";let i=n===\"system\"?u():n;const r=e.getAttribute(\"data-color-mode-forced\");r&&(i=r),l(i),t[\"__NUXT_COLOR_MODE__\"]={preference:n,value:i,getColorScheme:u,addColorScheme:l,removeColorScheme:d};function l(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.add(s):e.className+=\" \"+s,a&&e.setAttribute(\"data-\"+a,o)}function d(o){const s=\"\"+o+\"\",a=\"\";e.classList?e.classList.remove(s):e.className=e.className.replace(new RegExp(s,\"g\"),\"\"),a&&e.removeAttribute(\"data-\"+a)}function f(o){return t.matchMedia(\"(prefers-color-scheme\"+o+\")\")}function u(){if(t.matchMedia&&f(\"\").media!==\"not all\"){for(const o of c)if(f(\":\"+o).matches)return o}return\"light\"}})();function getStorageValue(t,e){switch(t){case\"localStorage\":return window.localStorage.getItem(e);case\"sessionStorage\":return window.sessionStorage.getItem(e);case\"cookie\":return getCookie(e);default:return null}}function getCookie(t){const c=(\"; \"+window.document.cookie).split(\"; \"+t+\"=\");if(c.length===2)return c.pop()?.split(\";\").shift()}";
 
-const _UqHyY33Gb9 = (function(nitro) {
+const _2MrM67LYAt = (function(nitro) {
   nitro.hooks.hook("render:html", (htmlContext) => {
     htmlContext.head.push(`<script>${script}<\/script>`);
   });
 });
 
 const plugins = [
-  _IO7N2WDZyn,
-_Fa4TWwbx7S,
-_UqHyY33Gb9
+  _1iTvOZYZt7,
+_0kNYcw0N6O,
+_2MrM67LYAt
 ];
 
 const scheduledTasks = false;
@@ -1093,7 +1093,7 @@ function publicAssetsURL(...path) {
 
 const warnOnceSet = /* @__PURE__ */ new Set();
 const DEFAULT_ENDPOINT = "https://api.iconify.design";
-const _bzdFC2 = defineCachedEventHandler(async (event) => {
+const _fDURuF = defineCachedEventHandler(async (event) => {
   const url = getRequestURL(event);
   if (!url)
     return createError({ status: 400, message: "Invalid icon request" });
@@ -1151,12 +1151,12 @@ const _bzdFC2 = defineCachedEventHandler(async (event) => {
   // 1 week
 });
 
-const _lazy_SHV7mE = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_7fl1sT = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_SHV7mE, lazy: true, middleware: false, method: undefined },
-  { route: '/api/_nuxt_icon/:collection', handler: _bzdFC2, lazy: false, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_SHV7mE, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_7fl1sT, lazy: true, middleware: false, method: undefined },
+  { route: '/api/_nuxt_icon/:collection', handler: _fDURuF, lazy: false, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_7fl1sT, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -1416,8 +1416,8 @@ const renderSSRHeadOptions = {"omitLineBreaks":false};
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
-const getServerEntry = () => import('file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getClientManifest = () => import('file://D:/Projects/sachkov-intensive/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getServerEntry = () => import('file://D:/Projects/sachkov-intensive/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRStyles = lazyCachedFunction(() => Promise.resolve().then(function () { return styles$1; }).then((r) => r.default || r));
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();

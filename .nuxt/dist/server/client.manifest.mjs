@@ -1,1 +1,1 @@
-export { default } from "file:///Users/julia.sachkova/Desktop/%D0%BA%D1%83%D1%80%D1%81/sachkov-intensive/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///D:/Projects/sachkov-intensive/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
