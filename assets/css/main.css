@@ -79,6 +79,36 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
 }
 
+.int__descr-title {
+  font-style: italic;
+}
+
+.int__list {
+  font-size: 18px;
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.int__list_why {
+  list-style-type: disc;
+}
+
+.int__list_why li::marker {
+  color: #e59cff;
+}
+
+.int__list_who li::marker {
+  content: "▴ ";
+  color: #ba9cff;
+}
+
+.int__list_total li::marker {
+  content: "▪ ";
+  color: #9cb2ff;
+}
+
 @media screen and (max-width: 1300px) {
   .carousel__next {
     right: -35px !important;

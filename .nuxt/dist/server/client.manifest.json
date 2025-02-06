@@ -7,12 +7,12 @@
     "module": true,
     "resourceType": "script"
   },
-  "D:/Projects/sachkov-intensive/node_modules/nuxt/dist/app/entry.js": {
+  "/Users/julia.sachkova/Desktop/курс/sachkov-intensive/node_modules/nuxt/dist/app/entry.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
     "isEntry": true,
-    "file": "D:/Projects/sachkov-intensive/node_modules/nuxt/dist/app/entry.js"
+    "file": "/Users/julia.sachkova/Desktop/курс/sachkov-intensive/node_modules/nuxt/dist/app/entry.js"
   }
 }

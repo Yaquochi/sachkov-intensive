@@ -28,6 +28,24 @@
         <LayoutFooter />
       </div>
     </div>
+
+    <a href="#">
+      <UButton
+        icon="i-heroicons-arrow-small-up"
+        size="xl"
+        color="purple"
+        variant="solid"
+        class="fixed bottom-0 right-0 mb-4 mr-4 animate-bounce"
+        :ui="{
+          rounded: 'rounded-full',
+          color: {
+            purple: {
+              solid: 'dark:text-white bg-purple-500 shadow-sm',
+            },
+          },
+        }"
+      />
+    </a>
   </div>
 </template>
 
