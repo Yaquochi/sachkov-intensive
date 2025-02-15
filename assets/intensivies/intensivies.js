@@ -1,12 +1,12 @@
 export const intensivies = [
-  {
-    id: 0,
-    name: "Архитектура и структура .NET веб-приложений. Проектирование ASP.NET Core сервисов.",
-    price: "14 900 ",
-    buyLink: "https://t.me/sachkova_mng",
-    descr:
-      "На этом интенсиве вы с нуля освоите проектирование и разработку современных .NET веб-приложений с использованием ASP.NET Core! Этот интенсив подойдет как для начинающих, так и для опытных разработчиков, которые хотят углубить свои знания в архитектуре, проектировании и создании масштабируемых веб приложений.",
-    fullDescription: `<div class="flex flex-col gap-4">
+	{
+		id: 0,
+		name: "Архитектура и структура .NET веб-приложений. Проектирование ASP.NET Core сервисов.",
+		price: "14 900 ",
+		buyLink: "https://t.me/sachkov_intensive_1_bot",
+		descr:
+			"На этом интенсиве вы с нуля освоите проектирование и разработку современных .NET веб-приложений с использованием ASP.NET Core! Этот интенсив подойдет как для начинающих, так и для опытных разработчиков, которые хотят углубить свои знания в архитектуре, проектировании и создании масштабируемых веб приложений.",
+		fullDescription: `<div class="flex flex-col gap-4">
         <span class="int__descr-title font-semibold text-2xl">Почему этот интенсив?</span>
 
         <ul class="int__list int__list_why">
@@ -31,13 +31,13 @@ export const intensivies = [
          <li>Не упустите возможность прокачать свои навыки и стать специалистом в разработке .NET веб-приложений!</li>
         </ul>
       </div>`,
-    lessonsAmount: 15,
-    duration: 13,
-    programm: [
-      {
-        label: "Урок 1. Продумывание идеи и проектирование проекта",
-        defaultOpen: true,
-        content: `<ul class="int-list">
+		lessonsAmount: 15,
+		duration: 13,
+		programm: [
+			{
+				label: "Урок 1. Продумывание идеи и проектирование проекта",
+				defaultOpen: true,
+				content: `<ul class="int-list">
                         <li class="programm-span">Какие бывают проекты и как придумать идею для проекта?</li>
                         <li class="programm-span">Конкретные примеры идей</li>
                         <li class="programm-span">Определяем функционал веб-приложения</li>
@@ -47,10 +47,10 @@ export const intensivies = [
                         <li class="programm-span">Cohesion, что это и для чего нужно</li>
                         <li class="programm-span">Coupling, что это и для чего нужно</li>
                           </ul>`,
-      },
-      {
-        label: "Урок 2. Проектирование REST API",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 2. Проектирование REST API",
+				content: `<ul class="int-list">
                     <li class="programm-span">Проектирование REST API. Что такое REST API?</li>
                     <li class="programm-span">Создание ресурса, метод POST</li>
                     <li class="programm-span">Получение ресурса, метод GET</li>
@@ -61,20 +61,20 @@ export const intensivies = [
                     <li class="programm-span">Важные правила при проектировании REST API</li>
                     <li class="programm-span">Проектирование более сложных endpoint'ов</li>
                 </ul>`,
-      },
-      {
-        label:
-          "Урок 3. Выбор архитектуры для проекта: монолит, модульный монолит, микросервисы",
-        content: `<ul class="int-list">
+			},
+			{
+				label:
+					"Урок 3. Выбор архитектуры для проекта: монолит, модульный монолит, микросервисы",
+				content: `<ul class="int-list">
                     <li class="programm-span">Какую архитектуру выбрать для проекта? Монолит, модульный монолит, микросервисы</li>
                     <li class="programm-span">Монолитная архитектура</li>
                     <li class="programm-span">Модульный монолит</li>
                     <li class="programm-span">Микросервисная архитектура</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 4. Чистая архитектура",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 4. Чистая архитектура",
+				content: `<ul class="int-list">
                     <li class="programm-span">Чистая архитектура, что это и зачем нужно?</li>
                     <li class="programm-span">Какие раньше были архитектуры?</li>
                     <li class="programm-span">Что такое бизнес логика?</li>
@@ -83,11 +83,11 @@ export const intensivies = [
                     <li class="programm-span">Внешние слои</li>
                     <li class="programm-span">Пример проекта с чистой архитектурой</li>
                 </ul>`,
-      },
-      {
-        label:
-          "Урок 5. Создание репозитория и проекта, создание основных сущностей",
-        content: `<ul class="int-list">
+			},
+			{
+				label:
+					"Урок 5. Создание репозитория и проекта, создание основных сущностей",
+				content: `<ul class="int-list">
                     <li class="programm-span">Создание репозитория</li>
                     <li class="programm-span">Создание проекта</li>
                     <li class="programm-span">Добавление .gitignore</li>
@@ -103,11 +103,11 @@ export const intensivies = [
                     <li class="programm-span">Древовидная структура, parent - children</li>
                     <li class="programm-span">Проектирование других сущностей</li>
                 </ul>`,
-      },
-      {
-        label:
-          "Урок 6. Настройка проекта: editorconfig, stylecop. Создание контроллера",
-        content: `<ul class="int-list">
+			},
+			{
+				label:
+					"Урок 6. Настройка проекта: editorconfig, stylecop. Создание контроллера",
+				content: `<ul class="int-list">
                     <li class="programm-span">Коммит и пуш изменений, пуллреквест и мерж</li>
                     <li class="programm-span">Создание Asp Net Core проекта</li>
                     <li class="programm-span">Создание слоя Presenters с контроллерами</li>
@@ -126,10 +126,10 @@ export const intensivies = [
                     <li class="programm-span">Удаление данных. HTTP DELETE метод</li>
                     <li class="programm-span">Другие HTTP методы для различных фич</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 7. Application слой",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 7. Application слой",
+				content: `<ul class="int-list">
                     <li class="programm-span">Коммит и пуш изменений</li>
                     <li class="programm-span">Формируем задачу, работа с Application слоем</li>
                     <li class="programm-span">Документация enum'ов</li>
@@ -151,10 +151,10 @@ export const intensivies = [
                     <li class="programm-span">Как использовать сервисы в контроллерах</li>
                     <li class="programm-span">Как и где правильно регистрировать зависимости</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 8. Инфраструктурный слой",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 8. Инфраструктурный слой",
+				content: `<ul class="int-list">
                     <li class="programm-span">Инфраструктурный слой, что это и для чего нужен</li>
                     <li class="programm-span">Создание инфраструктурного слоя для базы данных</li>
                     <li class="programm-span">Инверсия зависимостей, объясняю на примере</li>
@@ -164,10 +164,10 @@ export const intensivies = [
                     <li class="programm-span">Как регистрировать инфраструктуру в DI? Extension методы</li>
                     <li class="programm-span">Подвожу итоги по инфраструктуре</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 9. Работа с ошибками, как правильно работать с Exceptions",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 9. Работа с ошибками, как правильно работать с Exceptions",
+				content: `<ul class="int-list">
                     <li class="programm-span">Почему важно правильно работать с ошибками</li>
                     <li class="programm-span">Создание кастомных Exceptions</li>
                     <li class="programm-span">Класс Error и Shared проект. Правильно работаем с ошибками</li>
@@ -175,10 +175,10 @@ export const intensivies = [
                     <li class="programm-span">Как правильно обрабатывать ошибки, Exception middleware</li>
                     <li class="programm-span">Почему Exceptions это не всегда хорошо</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 10. Result паттерн",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 10. Result паттерн",
+				content: `<ul class="int-list">
                     <li class="programm-span">Когда нужно использовать Exceptions</li>
                     <li class="programm-span">Когда нужно использовать Result паттерн</li>
                     <li class="programm-span">Зачем нужен Result паттерн, что это такое</li>
@@ -193,10 +193,10 @@ export const intensivies = [
                     <li class="programm-span">Пример кода с try catch + Result</li>
                     <li class="programm-span">Метод расширения для красивого ответа клиенту, статус коды</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 11. Реализация других бизнес фич",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 11. Реализация других бизнес фич",
+				content: `<ul class="int-list">
                     <li class="programm-span">Метод AddAnswer</li>
                     <li class="programm-span">Что должен возвращать метод в сервисах</li>
                     <li class="programm-span">Документация методов, summary</li>
@@ -209,10 +209,10 @@ export const intensivies = [
                     <li class="programm-span">Добавляем новые бизнес правила и усложняем метод</li>
                     <li class="programm-span">Как обратиться к другому модулю в разных случаях, новый инфраструктурный слой</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 12. Разделение сервиса на обработчики (Hanlders)",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 12. Разделение сервиса на обработчики (Hanlders)",
+				content: `<ul class="int-list">
                     <li class="programm-span">Разделение сервиса на части</li>
                     <li class="programm-span">Как правильно назвать обработчик</li>
                     <li class="programm-span">Вынесение фичи в отдельный класс</li>
@@ -226,10 +226,10 @@ export const intensivies = [
                     <li class="programm-span">Scrutor, расширяем возможности Dependency Injection</li>
                     <li class="programm-span">Получение данных</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 13. Получение данных из бд и других источников",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 13. Получение данных из бд и других источников",
+				content: `<ul class="int-list">
                     <li class="programm-span">Как получать данные?</li>
                     <li class="programm-span">Пишем фичу на получение данных с фильтрами</li>
                     <li class="programm-span">Какие модели возвращать из бэкенда? Создаём DTO</li>
@@ -245,10 +245,10 @@ export const intensivies = [
                     <li class="programm-span">Добавление IQuery и IQueryHandler</li>
                     <li class="programm-span">Что если мы не используем EF Core, а используем Dapper</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 14. Модульный монолит",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 14. Модульный монолит",
+				content: `<ul class="int-list">
                     <li class="programm-span">Рассматриваем обычное монолитное решение</li>
                     <li class="programm-span">Как будет выглядеть модульный монолит</li>
                     <li class="programm-span">Меняем структуру проекта, создаём новые проекты</li>
@@ -263,14 +263,14 @@ export const intensivies = [
                     <li class="programm-span">Взаимодействие между модулями с помощью контрактов</li>
                     <li class="programm-span">Как регистрировать DI в модулях</li>
                 </ul>`,
-      },
-      {
-        label: "Урок 15. Github actions",
-        content: `<ul class="int-list">
+			},
+			{
+				label: "Урок 15. Github actions",
+				content: `<ul class="int-list">
                     <li class="programm-span">Пушим прошлую задачу в github</li>
                     <li class="programm-span">Настриваем Github actions</li>
                 </ul>`,
-      },
-    ],
-  },
+			},
+		],
+	},
 ];
