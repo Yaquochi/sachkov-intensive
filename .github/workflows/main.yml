@@ -25,7 +25,7 @@ jobs:
         git pull origin main && \
         cd ${{ secrets.DOCKER_DIR }} && \
         docker compose down && \
-        docker compose up -d"
+        docker compose up --build -d"
 
     - name: cleanup
       run: rm -rf ~/.ssh
