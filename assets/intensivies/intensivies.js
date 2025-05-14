@@ -32,8 +32,8 @@ export const intensivies = [
          <li>Не упустите возможность прокачать свои навыки и стать специалистом в разработке .NET веб-приложений!</li>
         </ul>
       </div>`,
-		lessonsAmount: 16,
-		duration: 14,
+		lessonsAmount: 17,
+		duration: 15,
 		programm: [
 			{
 				label: "Урок 1. Продумывание идеи и проектирование проекта",
@@ -274,12 +274,16 @@ export const intensivies = [
 			},
 			{
 				label:
-					"Урок 15. Mediatr - зачем он нужен и почему лучше его не использовать. Cross-cutting concerns. Декораторы",
+					"Урок 16. Лучший способ возвращать API ответы в приложении. EndpointResult",
 				content: `<ul class="int-list">
-                    <li class="programm-span">Что такое Mediatr</li>
-                    <li class="programm-span">Внедрение Mediatr в проект</li>
-                    <li class="programm-span">Behaviors, Cross-cutting concerns</li>
-                    <li class="programm-span">Декораторы</li>
+                    <li class="programm-span">В этом уроке будет информация о лучшем способе возвращать ответы от API</li>
+                </ul>`,
+			},
+			{
+				label:
+					"Урок 17. Как выбрать архитектуру для проекта: Clean Architecture vs Vertical Slice Architecture",
+				content: `<ul class="int-list">
+                    <li class="programm-span">Clean Architecture vs Vertical Slice Architecture</li>
                 </ul>`,
 			},
 		],
