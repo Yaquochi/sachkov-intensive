@@ -4,7 +4,7 @@ export const intensivies = [
 		name: "Архитектура и структура .NET веб-приложений. Проектирование ASP.NET Core сервисов.",
 		price: "14 900 ",
 		sale: "9 900",
-		buyLink: "https://t.me/sachkov_intensive_1_bot?start=promo_INTENSIVE",
+		buyLink: "https://t.me/sachkov_intensive_1_bot",
 		descr:
 			"На этом интенсиве вы с нуля освоите проектирование и разработку современных .NET веб-приложений с использованием ASP.NET Core! Этот интенсив подойдет для начинающих разработчиков, которые хотят углубить свои знания в архитектуре, проектировании и создании масштабируемых веб приложений на основе монолитной и модульной архитектуре.",
 		fullDescription: `<div class="flex flex-col gap-4">
