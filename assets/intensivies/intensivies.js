@@ -2,8 +2,8 @@ export const intensivies = [
 	{
 		id: 0,
 		name: "Архитектура и структура .NET веб-приложений. Проектирование ASP.NET Core сервисов.",
-		price: "14 900 ",
-		sale: "9 900",
+		price: "15000 ",
+		sale: "10000",
 		buyLink: "https://t.me/sachkov_intensive_1_bot",
 		descr:
 			"На этом интенсиве вы с нуля освоите проектирование и разработку современных .NET веб-приложений с использованием ASP.NET Core! Этот интенсив подойдет для начинающих разработчиков, которые хотят углубить свои знания в архитектуре, проектировании и создании масштабируемых веб приложений на основе монолитной и модульной архитектуре.",
@@ -32,8 +32,8 @@ export const intensivies = [
          <li>Не упустите возможность прокачать свои навыки и стать специалистом в разработке .NET веб-приложений!</li>
         </ul>
       </div>`,
-		lessonsAmount: 17,
-		duration: 15,
+		lessonsAmount: 18,
+		duration: 16,
 		programm: [
 			{
 				label: "Урок 1. Продумывание идеи и проектирование проекта",
@@ -284,6 +284,13 @@ export const intensivies = [
 					"Урок 17. Как выбрать архитектуру для проекта: Clean Architecture vs Vertical Slice Architecture",
 				content: `<ul class="int-list">
                     <li class="programm-span">Clean Architecture vs Vertical Slice Architecture</li>
+                </ul>`,
+			},
+			{
+				label:
+					"Урок 18. Проектирование доменных сущностей для доменной области - Бронирование мест на мероприятия",
+				content: `<ul class="int-list">
+                    <li class="programm-span">Пример проектирования доменных сущностей для другой доменной области.</li>
                 </ul>`,
 			},
 		],
