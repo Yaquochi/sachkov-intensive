@@ -67,10 +67,6 @@
 							{{ getNoun(int.duration, "час", "часа", "часов") }}
 						</span>
 					</div>
-
-					<span class="px-2 font-extrabold mx-auto">
-						+ стрим с ответами на вопросы
-					</span>
 				</div>
 
 				<p class="text-center font-thin">
