@@ -63,7 +63,21 @@
   position: relative;
 }
 
+.app::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(10, 1, 25, 0.4);
+  pointer-events: none;
+  z-index: 1;
+}
+
 .app__fullcontent {
+  position: relative;
+  z-index: 2;
   padding: 40px 100px;
   max-width: 1600px;
   margin: 0 auto;
