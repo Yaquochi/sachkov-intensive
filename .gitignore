@@ -9,14 +9,44 @@ dist
 # Node dependencies
 node_modules
 
+# Package lock files (keep only package-lock.json)
+yarn.lock
+pnpm-lock.yaml
+
+# Build and cache files
+.vite
+.rollup.cache
+.turbo
+*.tsbuildinfo
+
+# IDE files
+.vscode
+.idea
+*.swp
+*.swo
+
 # Logs
 logs
 *.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Misc
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
 # Local env files
 .env
 .env.*
 !.env.example
+
+# Documentation (if auto-generated)
+README.md
