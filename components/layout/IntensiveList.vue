@@ -3,18 +3,21 @@
     <h2 class="section__title">Доступные интенсивы</h2>
 
     <Carousel
+      ref="carousel"
       :itemsToShow="
         $viewport.isLessThan('tablet') || intensivies.length < 2 ? 1 : 2
       "
       :wrap-around="$viewport.isLessThan('tablet')"
       :mouseDrag="false"
       class="carousel-container"
+      v-model="currentSlide"
     >
       <Slide v-for="(int, index) in intensivies" :key="int.id">
         <div class="relative">
           <div v-if="index === 1" class="section__new-badge">НОВИНКА</div>
           <div
             class="section__card section__card_main w-[440px] max-[768px]:w-full max-[1300px]:w-[380px] h-full mx-auto"
+            :class="{ section__card_active: int.id === currentIntensive.id }"
             @click="changeIntensive(int)"
           >
             <div class="flex flex-col h-full">
@@ -163,11 +166,93 @@ const { $viewport } = useNuxtApp();
 
 import { intensivies } from "~/assets/intensivies/intensivies";
 
-const currentIntensive = ref(intensivies[0]);
+const route = useRoute();
+const router = useRouter();
+const carousel = ref(null);
+const currentSlide = ref(0);
+
+// Инициализация интенсива из URL или дефолтный
+const getInitialIntensive = () => {
+  const intensiveId = route.query.intensive;
+  if (intensiveId) {
+    const found = intensivies.find((int) => int.id == intensiveId);
+    return found || intensivies[0];
+  }
+  return intensivies[1]; // дефолт второй интенсив (id: 2)
+};
+
+const currentIntensive = ref(getInitialIntensive());
+
+// Устанавливаем начальный слайд на основе выбранного интенсива
+const setInitialSlide = () => {
+  const index = intensivies.findIndex(
+    (int) => int.id === currentIntensive.value.id
+  );
+  currentSlide.value = index >= 0 ? index : 0;
+};
+
+onMounted(() => {
+  setInitialSlide();
+});
 
 const changeIntensive = (int) => {
   currentIntensive.value = int;
+  // Синхронизируем карусель
+  const index = intensivies.findIndex((intensive) => intensive.id === int.id);
+  if (index >= 0) {
+    currentSlide.value = index;
+  }
+  // Обновляем URL без перезагрузки страницы
+  router.push({
+    query: {
+      ...route.query,
+      intensive: int.id,
+    },
+  });
 };
+
+// Синхронизация при изменении слайда карусели
+watch(currentSlide, (newSlideIndex) => {
+  if (
+    intensivies[newSlideIndex] &&
+    intensivies[newSlideIndex].id !== currentIntensive.value.id
+  ) {
+    const newIntensive = intensivies[newSlideIndex];
+    currentIntensive.value = newIntensive;
+    router.push({
+      query: {
+        ...route.query,
+        intensive: newIntensive.id,
+      },
+    });
+  }
+});
+
+// Отслеживаем изменения в URL (кнопки браузера назад/вперед)
+watch(
+  () => route.query.intensive,
+  (newIntensiveId) => {
+    if (newIntensiveId) {
+      const found = intensivies.find((int) => int.id == newIntensiveId);
+      if (found && found.id !== currentIntensive.value.id) {
+        currentIntensive.value = found;
+        // Синхронизируем карусель
+        const index = intensivies.findIndex((int) => int.id === found.id);
+        if (index >= 0) {
+          currentSlide.value = index;
+        }
+      }
+    }
+  }
+);
+
+// Функция для генерации ссылки на интенсив
+const getIntensiveLink = (intensiveId) => {
+  return `${route.path}?intensive=${intensiveId}`;
+};
+
+// Экспортируем для использования в других компонентах
+defineExpose({ getIntensiveLink });
 
 const getNoun = (num, one, two, five) => {
   let n = Math.abs(num);

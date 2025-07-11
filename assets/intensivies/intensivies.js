@@ -1,6 +1,6 @@
 export const intensivies = [
   {
-    id: 0,
+    id: 1,
     name: "Архитектура и структура .NET веб-приложений",
     price: "15000 ",
     sale: "10000",
@@ -579,7 +579,7 @@ export const intensivies = [
                 </ul>`,
       },
       {
-        label: "Урок 17. Работа с индексы и оптимизация",
+        label: "Урок 17. Работа с индексами и оптимизация запросов",
         comingSoon: true,
       },
       {
@@ -588,6 +588,10 @@ export const intensivies = [
       },
       {
         label: "Урок 19. Работа с деревьями и иерархическими структурами",
+        comingSoon: true,
+      },
+      {
+        label: "Урок 20. Паттерн Спецификация (Specification)",
         comingSoon: true,
       },
     ],
