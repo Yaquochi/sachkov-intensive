@@ -570,18 +570,42 @@ export const intensivies = [
             },
             {
                 label: "Урок 17. Работа с деревьями и иерархическими структурами в Postgresql. Adjacency List и Materialized Path",
-                content: ``,
+                content: `<ul class="int-list">
+                <li class="programm-span">Разбираем стратегию Adjacency List</li>
+                <li class="programm-span">Разбираем стратегию Materialized Path</li>
+                <li class="programm-span">Рассматриваем как реализовать связи</li>
+                <li class="programm-span">Рассматриваем создание сущностей</li>
+                <li class="programm-span">Создание иерархии сущностей</li>
+                <li class="programm-span">Разбираем запрос на получение иерархии через рекурсию</li>
+                <li class="programm-span">Почему через Ef Core не получится сделать рекурсивный запрос?</li>
+                <li class="programm-span">В чём минус рекурсивного запроса?</li>
+                <li class="programm-span">Как настроить Postgres, чтобы использовать Ltree?</li>
+                <li class="programm-span">Разбираем запрос на получение иерархии через Ltree</li>
+                <li class="programm-span">Рассматриваем пример получения соседних элементов (братьев и сестёр) используя Ltree</li>
+                <li class="programm-span">Рассматриваем пример получения дочерних элементов до какой-то глубины с помощью Ltree</li>
+                <li class="programm-span">Удаление с помощью Ltree</li>
+            </ul>`,
             },
             {
-                label: "Урок 18. Работа с индексами и оптимизация запросов",
+                label: "Урок 18. Постепенное раскрытие дерева, LATERAL JOIN и ОКОННЫЕ ФУНКЦИИ",
+                content: `<ul class="int-list">
+                <li class="programm-span">Постепенное раскрытие подразделений</li>
+                <li class="programm-span">Версия запроса с LATERAL JOIN</li>
+                <li class="programm-span">Улучшаем запрос, добавляем поле HasMoreChildren</li>
+                <li class="programm-span">N + 1 проблема</li>
+                <li class="programm-span">Версия запроса через оконную функцию</li>
+            </ul>`,
+            },
+            {
+                label: "Урок 19. Работа с индексами и оптимизация запросов",
                 comingSoon: true,
             },
             {
-                label: "Урок 19. CQRS",
+                label: "Урок 20. CQRS",
                 comingSoon: true,
             },
             {
-                label: "Урок 20. Паттерн Спецификация (Specification)",
+                label: "Урок 21. Паттерн Спецификация (Specification)",
                 comingSoon: true,
             },
         ],
