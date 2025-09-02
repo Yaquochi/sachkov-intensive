@@ -335,8 +335,8 @@ export const intensivies = [
          <li>Получите практический опыт создания масштабируемой архитектуры доступа к данным.</li>
         </ul>
       </div>`,
-        lessonsAmount: 16,
-        duration: 18,
+        lessonsAmount: 18,
+        duration: 20,
         programm: [
             {
                 label: "Урок 1. Основы PostgreSQL и теория баз данных",
