@@ -335,8 +335,8 @@ export const intensivies = [
          <li>Получите практический опыт создания масштабируемой архитектуры доступа к данным.</li>
         </ul>
       </div>`,
-        lessonsAmount: 18,
-        duration: 20,
+        lessonsAmount: 19,
+        duration: 21,
         programm: [
             {
                 label: "Урок 1. Основы PostgreSQL и теория баз данных",
@@ -594,11 +594,19 @@ export const intensivies = [
                 <li class="programm-span">Улучшаем запрос, добавляем поле HasMoreChildren</li>
                 <li class="programm-span">N + 1 проблема</li>
                 <li class="programm-span">Версия запроса через оконную функцию</li>
-            </ul>`,
+                </ul>`,
             },
             {
                 label: "Урок 19. Работа с индексами и оптимизация запросов",
-                comingSoon: true,
+                content: `<ul class="int-list">
+                <li class="programm-span">Индексы в PostgreSQL</li>
+                <li class="programm-span">Btree индексы для внешних ключей</li>
+                <li class="programm-span">Создаём индексы для ускорения запроса</li>
+                <li class="programm-span">Селективность у индексов</li>
+                <li class="programm-span">Ручные миграции для создания сложных индексов</li>
+                <li class="programm-span">Составные индексы. Практикуемся на других индексах</li>
+                <li class="programm-span">Индекс для поиска подстрок, GIN индекс</li>
+                </ul>`,
             },
             {
                 label: "Урок 20. CQRS",
